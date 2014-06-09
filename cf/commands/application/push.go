@@ -2,6 +2,11 @@ package application
 
 import (
 	"fmt"
+	"os"
+	"regexp"
+	"strconv"
+	"strings"
+
 	"github.com/cloudfoundry/cli/cf/actors"
 	"github.com/cloudfoundry/cli/cf/api"
 	"github.com/cloudfoundry/cli/cf/command_metadata"
@@ -16,10 +21,6 @@ import (
 	"github.com/cloudfoundry/cli/cf/terminal"
 	"github.com/cloudfoundry/cli/words"
 	"github.com/codegangsta/cli"
-	"os"
-	"regexp"
-	"strconv"
-	"strings"
 )
 
 type Push struct {
