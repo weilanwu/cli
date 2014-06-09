@@ -165,10 +165,13 @@ and this stack trace:
 
 %s
 	`
-	stackByteCount := 0
+	stackByteCount   := 0
 	STACK_SIZE_LIMIT := 1024 * 1024
 	var bytes []byte
-	for stackSize := 1024; (stackByteCount == 0 || stackByteCount == stackSize) && stackSize < STACK_SIZE_LIMIT; stackSize = 2 * stackSize {
+	for stackSize := 1024;
+            (stackByteCount == 0 || stackByteCount == stackSize) &&
+                stackSize < STACK_SIZE_LIMIT;
+            stackSize = 2 * stackSize {
 		bytes = make([]byte, stackSize)
 		stackByteCount = runtime.Stack(bytes, true)
 	}
