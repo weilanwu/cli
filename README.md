@@ -5,8 +5,7 @@ This is the official command line client for Cloud Foundry.
 
 Getting Started
 ===============
-Download and run the installer for your platform from the section below. If you are on OS X, you can also install the CLI
-with homebrew--run `brew install cloudfoundry-cli`.
+Download and run the installer for your platform from the section below. If you are on OS X, you can also install the CLI with homebrew--run `brew install cloudfoundry-cli`.
 
 Once installed, you can log in and push an app.
 ```
